@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meow Cats - Cat Images</title>
+</head>
+<body>
+    <h1>Cat Images</h1>
+    <div>
+        {% for cat_image in cat_images %}
+            <img src="{{ cat_image['src'] }}" alt="Cat Image">
+        {% endfor %}
+    </div>
+</body>
+</html>
